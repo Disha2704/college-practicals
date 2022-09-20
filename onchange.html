@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Onchange</title>
+</head>
+<body id="mybody">
+    <select name="" id="Animal">
+        <option value="" disabled selected>Select animal</option>
+        <option  value="Lion" >Lion</option>
+        <option value="Tiger">Tiger</option>
+        <option value="Elephant">Elephant</option>
+        <option value="Cow">Cow</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+    </select>
+
+    <script>
+     var Animal = document.getElementById("Animal");
+     var mybody = document.getElementById("mybody");
+     Animal.addEventListener("change",()=>{
+        console.log(Animal.value)
+
+        if(Animal.value==="Lion")
+
+        {
+            mybody.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg')";
+        }
+        else if(Animal.value==="Tiger")
+        {
+            mybody.style.backgroundImage="url('https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg')";
+
+
+        }
+        else if(Animal.value==="Elephant")
+        {
+            mybody.style.backgroundImage="url('https://i.natgeofe.com/k/e7ba8001-23ac-457f-aedb-abd5f2fdda62/moms5_4x3.png')";
+
+        }
+        else if(Animal.value==="Cow")
+        {
+             mybody.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg')";
+
+        }
+        else if(Animal.value==="Dog")
+        {
+            mybody.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg')";
+
+        }
+        else if(Animal.value==="Cat")
+        {
+            mybody.style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg')";
+
+        }
+     })
+    </script>
+</body>
+</html>

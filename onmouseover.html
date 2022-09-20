@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>onmouseover</title>
+</head>
+<body> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGXzy8k3uw1DhpvrkD-bSzn2nlm4mIQsxvw&usqp=CAU" alt="" id="bulb"> 
+</body>
+
+<script>
+    var a = document.getElementById("bulb");
+a.addEventListener("mouseover",()=>{
+    
+    a.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPL8t1n4_1cQSVsXJh9lhpFs1DRMFOF58V-Q&usqp=CAU";
+});
+
+a.addEventListener("mouseout",()=>{
+    a.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGXzy8k3uw1DhpvrkD-bSzn2nlm4mIQsxvw&usqp=CAU";
+});
+
+</script>
+</html>
